@@ -1,0 +1,24 @@
+body {
+  /* background: url("https://img.freepik.com/free-vector/programming-code-coding-hacker-background-programming-code-icon-made-with-binary-code_127544-815.jpg?size=626&ext=jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.singlePost {
+  background-color: rgb(241, 66, 12, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 15px;
+}
+
+.title {
+  font-size: 30pt;
+}
+
+div img {
+  height: 30vh;
+  padding: 10px;
+}
