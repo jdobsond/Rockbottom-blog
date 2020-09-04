@@ -24,6 +24,7 @@ function updateUserPost(posts) {
 }
 
 function renderUser() {
+  document.getElementById("usernames").innerHTML = "";
   fetch("http://localhost:4000/users")
     .then((resp) => resp.json())
     // .then((json) => console.log(json));
@@ -44,5 +45,7 @@ function deletePost(id) {
     method: "DELETE",
   })
     .then((resp) => resp.json())
-    .then((json) => getUserPosts(json));
+    .then(() => getUserPosts(document.getElementById("username").value));
 }
+
+function editPost() {}

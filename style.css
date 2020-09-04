@@ -22,3 +22,16 @@ div img {
   height: 30vh;
   padding: 10px;
 }
+
+.createPost {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px pink;
+  width: 50vw;
+}
+
+.createPostContainer {
+  display: flex;
+  justify-content: center;
+}
