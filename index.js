@@ -8,19 +8,20 @@ function getUserPosts(userName) {
 
 function updateUserPost(posts) {
   document.getElementById("userPosts").innerHTML = "";
-  posts.map(
-    (el) =>
-      (document.getElementById(
-        "userPosts"
-      ).innerHTML += `<div class="singlePost">
+  posts.map((el) => {
+    document.getElementById("userPosts").innerHTML += `<div class="singlePost">
         <div class="title">${el.title}</div>
         <div class="content">${el.textBody}</div>
         <div class="image"><img src="${el.image}" alt="" /></div>
         <div class="readTime">${el.timeToRead}</div>
         <div class="timeCreated">${el.timeCreated}</div>
-        <button onclick="deletePost(${el.id})">Delete</button>
-    </div>`)
-  );
+    </div>`;
+    if (el.userName === document.getElementById("username").value) {
+      document.getElementById(
+        "userPosts"
+      ).innerHTML += `<button onclick="deletePost(${el.id})">Delete</button>`;
+    }
+  });
 }
 
 function renderUser() {

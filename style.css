@@ -2,6 +2,7 @@ body {
   /* background: url("https://img.freepik.com/free-vector/programming-code-coding-hacker-background-programming-code-icon-made-with-binary-code_127544-815.jpg?size=626&ext=jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .singlePost {
@@ -34,4 +35,39 @@ div img {
 .createPostContainer {
   display: flex;
   justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  /* border: 2px solid hotpink; */
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.card-container:hover {
+  box-shadow: 4px 8px grey;
+}
+
+.card-title {
+  font-size: 28px;
+  padding-bottom: 50px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 2px 2px black;
+  /* background-color: black; */
+}
+
+.card-author {
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 3px 3px black;
 }
