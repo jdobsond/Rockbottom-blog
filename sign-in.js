@@ -24,13 +24,13 @@ function validateSignIn(json) {
 
 function createPost() {
   let data = {};
-
+  let currentDate = new Date(Date.now());
   data.userName = document.getElementById("username").value;
   data.title = document.getElementById("postTitle").value;
   data.textBody = document.getElementById("postContent").value;
   data.image = document.getElementById("newImage").value;
   data.timeToRead = document.getElementById("timeToRead").value;
-  data.timeCreated = Date.now();
+  data.timeCreated = currentDate.toLocaleDateString();
   console.log(JSON.stringify(data));
   fetch("http://localhost:4000/create-post", {
     method: "POST",
@@ -48,7 +48,7 @@ function renderCreatedPost() {
   ).innerHTML = `<label for="postTitle">Title</label>
   <input class="postTitle" id="postTitle" type="text" />
   <label for="postContent">Content</label>
-  <input class="postConent" id="postContent" type="text" />
+  <textarea class="postContent" id="postContent" rows="6" cols="50"></textarea>
   <label for="newImage">Add an image</label>
   <input class="newImage" id="newImage" type="text" />
   <label for="timeToRead">Time to Read</label>

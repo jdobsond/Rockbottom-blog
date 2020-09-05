@@ -3,6 +3,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Kumbh Sans", sans-serif;
+  background-color: lightgray;
+}
+
+.Sign-In {
+  border-radius: 15px;
 }
 
 .singlePost {
@@ -13,6 +18,7 @@ body {
   align-items: center;
   color: white;
   padding: 15px;
+  border-radius: 10px;
 }
 
 .title {
@@ -28,7 +34,7 @@ div img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 3px pink;
+  border: 3px solid pink;
   width: 50vw;
 }
 
@@ -37,27 +43,40 @@ div img {
   justify-content: center;
 }
 
+.main-card-container {
+  display: flex;
+  margin: 5px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .card-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-direction: column;
+  text-align: center;
   /* border: 2px solid hotpink; */
-  width: 150px;
-  height: 150px;
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+  background-color: peachpuff;
 }
 
 .card-container:hover {
   box-shadow: 4px 8px grey;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .card-title {
   font-size: 28px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   color: white;
   font-weight: bolder;
   text-shadow: 2px 2px black;
@@ -70,4 +89,28 @@ div img {
   color: white;
   font-weight: bolder;
   text-shadow: 3px 3px black;
+}
+
+/* .postContent {
+  height: 135px;
+
+} */
+
+.delete-button {
+  border-radius: 10px;
+  border: 2px solid green;
+  width: 100vw;
+}
+
+.createPostContainer {
+  padding-top: 15px;
+  display: flex;
+}
+
+.createPost input,
+textarea,
+label,
+button {
+  margin: 5px;
+  padding: 4px;
 }
